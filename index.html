@@ -1,52 +1,28 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/build.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tu Portada</title>
 </head>
+<body>
+    <!-- Portada con imagen de fondo -->
+    <div class="relative bg-cover bg-center h-64" style="background-image: url('dulce.png');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-white text-4xl font-bold text-center">
+                Bienvenido a mi página
+                <p class="text-lg mt-4">Descripción de la portada...</p>
+            </div>
+        </div>
+    </div>
 
-
-<div class="relative"> <img src="https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80" alt="" class="w-full object-cover h-60 lg:h-96 border-4"> <img class="absolute transform translate-x-1/4 -translate-y-1/4 rounded-full w-44 h-44 object-cover border-4" src="https://scontent.fnqn4-1.fna.fbcdn.net/v/t39.30808-6/426563097_7512121805545842_3691005611991893357_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=RTQjRtk_VF8AX-RKB_S&_nc_ht=scontent.fnqn4-1.fna&oh=00_AfA3GB_mr-DGruCsHXiQV7Wi7n8UWjOJCJ6NWK1qKWnc7w&oe=65DE8A7C" alt=""> <div class="flex flex-col"> <h1 class="text-end font-semibold mb-2 lg:mb-0 text-xl mr-20 mt-6">Hector Daniel Ayarachi Fuentes</h1> </div> </div>
-    
-<style>
-    @media (max-width: 320px) {
-      .flex-col {
-        margin-top: 120px;
-        margin-right: 8px;
-      }
-  
-      /* Heading */
-      .relative .flex-col h1 {
-        position: relative;
-        top: 0;
-        left: 31px;
-        bottom: -200px;
-        right: -200px;
-        z-index: -10;
-        width: 397px;
-        margin-left: -130px;
-        margin-right: -50px;
-      }
-    }
-  </style>
-  
-      
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </body>
-
-</html> 
+    <div class="flex items-center justify-centerabsolute transform translate-x-1/4 -translate-y-1/4 rounded-full w-44 h-44 object-cover border-4">
+        <!-- Foto de perfil circular -->
+        <div class="rounded-full overflow-hidden border-4 border-white">
+            <img src="fino.jpg" alt="Foto de perfil" class="w-40 h-40 object-cover">
+        </div>
+    </div>
+</body>
+</html>
