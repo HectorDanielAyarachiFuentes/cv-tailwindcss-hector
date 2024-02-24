@@ -25,27 +25,41 @@
 
 </head>
 
-<div class="bg-blue-400   py-40 mx-1 my-1  ">
-    <p class="text-end font-semibold   mx-auto ">Este es un texto grande y en negrita.</p>
+<div class="relative bg-blue-400 py-40 mx-1 my-1">
+    <p class="text-end font-semibold mx-auto">Este es un texto grande y en negrita.</p>
     <p class="text-start">Con fondo azul, texto blanco, relleno (padding) de 4 unidades y esquinas redondeadas.</p>
+    
+    <div class="absolute top-100 left-4/3 transform translate-x-3/4 -mt-16 w-36 h-36 rounded-full overflow-hidden">
+        <img src="https://scontent.fnqn4-1.fna.fbcdn.net/v/t39.30808-6/426563097_7512121805545842_3691005611991893357_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=RTQjRtk_VF8AX-RKB_S&_nc_ht=scontent.fnqn4-1.fna&oh=00_AfA3GB_mr-DGruCsHXiQV7Wi7n8UWjOJCJ6NWK1qKWnc7w&oe=65DE8A7C" alt="Imagen" class="w-full h-full object-cover">
+    </div>
 </div>
 
+<!-- Agregar tu nombre y "tecrrhh" abajo a la derecha con margen -->
+<div class="text-red text-right mr-4 mb-4 md:mb-0 md:mt-4">
+    <p class="font-bold">Hector Daniel Ayarachi Fuentes</p>
+    <p class="font-bold">tecrrhh</p>
+</div>
 
+<Style>
+@media (max-width:576px){
 
+    /* Paragraph */
+    .text-right p{
+     z-index:-10;
+     position:relative;
+     top:88px;
+    }
+    
+    /* Image */
+    .relative .overflow-hidden img{
+     transform:translatex(1px) translatey(0px);
+    }
 
+   
+    }
 
-
-<div class="w-36 h-36 bg-gray-300 rounded-full overflow-hidden">
-    <img src="dulce.png" alt="Imagen" class="w-full h-full object-cover">
-  </div>
-  
-
-
-
-
-
-
-
-  
+    
+   }
+</Style>
   </body>
 </html>
